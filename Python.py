@@ -2,7 +2,7 @@ from pynput import keyboard
 import pyautogui
 import time
 
-#List to store recorded keystrokes
+#List of Keystrokes
 keystrokes = []
 
 #Function to record key presses
@@ -30,8 +30,3 @@ def play_back_keystrokes(keystrokes):
 
 # Play back the recorded keystrokes
 play_back_keystrokes(keystrokes)
-
-#interact with the screen
-pyautogui.moveTo(500, 500)
-pyautogui.click()
-pyautogui.typewrite("Test Test")
